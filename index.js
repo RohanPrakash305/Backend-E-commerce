@@ -4,6 +4,7 @@ import connectDb from './config/db.js'
 import cookieParser from 'cookie-parser'
 import authRoutes from './routes/authRoutes.js'
 import cors from 'cors'
+import userRoutes from './routes/userRout.js'
 
 dotenv.config()
 
@@ -20,6 +21,7 @@ app.use(cors({
 }))
 
 app.use("/api/auth",authRoutes)
+app.use("/api/auth",userRoutes)
 
 
 
