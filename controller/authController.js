@@ -79,6 +79,8 @@ export const logOut = async(req,res) => {
     }
 }
    
+
+
 export const googleLogin = async (req,res) => {
 
     try {
@@ -87,7 +89,7 @@ export const googleLogin = async (req,res) => {
         let user = await User.findOne({email})
 
         if(!user){
-            user =await Uawe.create({
+            user = await User.create({
 
                 name,email
             })

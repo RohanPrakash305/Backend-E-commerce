@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken"
 
-export const genToken =async (userID) => {
+export const genToken = async (userID) => {
 
     try {
 
